@@ -1,0 +1,29 @@
+<ion-header >
+  <ion-toolbar color="primary" >
+  	<img class="logo" src="../assets/img/logo.png">
+    <div class="title">Тренер Успеха</div>
+    
+    <img class="burger" src="../assets/img/burger.png">
+ 	</ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+	<div class="background_man_l"></div>
+	<div class="background_man_r"></div>
+	<div>
+	  <ul *ngFor="let item of items">
+	    <li class="elementmenu {{item.active}}" routerLink="/{{item.url}}"  >{{ item.name }}</li> 
+	  </ul>
+	</div>
+
+	<ion-button  color="light" expand="block" (click)="addTables()" >Создать таблицы</ion-button>
+
+	<ion-button  color="light" expand="block" (click)="insertDataTables()" >Заполнить данными таблицы</ion-button>
+
+	<ion-button  color="light" expand="block" (click)="dropTableSecond()" >Удаление таблицы</ion-button>
+
+	<ion-button  color="light" expand="block" (click)="getDataSectionAll()" >Получить данные</ion-button>
+
+
+</ion-content>

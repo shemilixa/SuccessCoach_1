@@ -1,0 +1,15 @@
+.logo{
+  float: left;
+  margin: 2px 10px;
+}
+.title{
+  color:#f9fcff;
+  float: left;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.burger{
+  float: right;
+  margin: 10px;
+}
